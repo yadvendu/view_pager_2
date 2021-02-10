@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_onBoarding"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="148dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/image_onBoarding"
+            app:layout_constraintStart_toStartOf="@+id/image_onBoarding"
+            app:layout_constraintTop_toBottomOf="@+id/image_onBoarding" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/image_onBoarding"
+            app:layout_constraintStart_toStartOf="@+id/image_onBoarding"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
